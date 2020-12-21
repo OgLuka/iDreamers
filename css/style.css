@@ -33,12 +33,12 @@ header{
     padding-bottom: 5px;
 }
 
-.col-6 ul {
+.Headerbuttons ul {
     display: flex;
     justify-content: flex-end;
 }
 
-.col-6 ul li {
+.Headerbuttons ul li {
     margin-left: 15px;
     margin-top: 10px;
 }
@@ -140,8 +140,6 @@ nav ul li{
 /* sticky header */
 
 #header {
-
-  overflow:hidden;
   background-color: white;
   position: fixed;
   top:0;
@@ -151,15 +149,15 @@ nav ul li{
 .main {
   margin-top: 70px;
 }
-.dropdown{
-
-}
 /* Components */
 .card-content1 h5 {
   font-weight: 700;
 }
 .card-border1 {
   padding: 20px 130px;
+}
+.Logged {
+  padding-top: 70px;
 }
 .card-body img{
   width: 100%;
@@ -551,13 +549,121 @@ font-size: 20px;
 #footer {
   position: inherit;
   bottom: 0;
-
+  padding-left: 130px;
+  padding-right: 130px;
+  background-color: white;
+  box-shadow:0 3px 4px -5px #000;
 }
-.plain {
+.socialcontent{
+  margin: 20px 312px 10px 312px;
+  padding-bottom: 10px;
+}
+.vertical-line-footer{
+  border-left: 2px solid #00a870;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  height: 60px;
+  opacity: 0.5;
+}
+.location {
+width: 170px;
+}
+.info{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.socialcontent ul h6{
+  color: #702283;
+  font-weight: 500;
+}
+.location-info li{
+  font-size: 14px;
+}
+.socialbuttons {
+  display: flex;
+  justify-content: center;
+  margin-right: 115px;
+
+}
+.fa {
+  margin: 5px 2px;
+  width: 20px;
+}
+.fa-facebook {
+  color: #00a870;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00a870;
+}
+.fa-twitter:hover {
+  color: #55ACEE;
+}
+.fa-pinterest {
+  color: #00a870;
+}
+.fa-pinterest:hover {
+  color: #cb2027;
+}
+.fa-instagram {
+  color:#00a870;
+}
+.fa-instagram:hover {
+  color: #e52d27;
+}
+.hr3{
+  border-top: 2px solid #00a870;
+  margin-top: 70px;
+  opacity: 0.5;
+
+}
+.profile-head{
+  border-color:#00a870;
+
+}
+.profileiqon{
+max-width: 30px;
+margin-right:5px;
+
+}
+.Smalldown{
+margin-left: 4px;
+
+}
+.dropdown{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 210px;
+
+}
+.dropdown ul{
+  display: none;
+    position: absolute;
+
+    top: 50px;
+}
+.dropdown ul::after{
+  position: absolute;
+     left: 50%;
+     top: -10px;
+     width: 0;
+     height: 0;
+     content: '';
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+     border-bottom: 20px solid white;
+
+
+}
+.Notif{
+margin-left: 5px;
+
+}
+
+
 /* .icon {
   display: inline-block;
 } */
@@ -590,7 +696,9 @@ margin-top: 120px;
    max-height: 80vw;
 
   }
-
+.profile-menu{
+padding-top: 40px;
+}
 }
     @media (min-width: 992px){
     .container {
