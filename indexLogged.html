@@ -9,87 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
 
-<!-- Modal -->
-<!-- Join -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="SignUpBorder">
-        <div class="card-body SignUp">
-             <a data-bs-dismiss="modal" type="button" class="button-close" style="float: right;">x</a>
-             <h5 class="card-title1 SignUp">Join iDreamers</h5>
-              <div class="SignUpSocials">
-                 <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
-                 <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
-                 <a href="#" class="btn btn-info"><i class="fa fa-twitter"></i> Twitter</a>
-                 <a href="ChooseCategories.html" class="btn btn-info"><i class="fa"></i>Sign up with Email</a>
-            </div>
-            <div class="AlreadySigned">
-            <h6 class="card-text1 SignUp"</st>Already Have an Account?</h6>
-            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop1" data-bs-dismiss="modal" type="button" class="button-signin">Sign In</a>
-          </div>
-          <p class="card-text2 SignUp">Click “Sign Up” to agree to iDreamers’    <u href="#" type="button"> Terms of Service </u>and acknowledge that iDreamers’ <u href="#" type="button" >Privacy Policy</u> applies to you.</p>
-          </div>
-     </div>
-    </div>
-  </div>
-</div>
-<!-- Join -->
-<!-- LogIn -->
-<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="SignUpBorder">
-        <div class="card-body SignUp">
-             <a type="button" class="button-close" data-bs-dismiss="modal" style="float: right;">x</a>
-             <h5 class="card-title1 SignUp">Sign In</h5>
-           <div class="InputUsername">
-             <input type="text" placeholder="Enter Username" name="username" required>
-             <input type="password" placeholder="Enter Password" name="password" required>
-           </div>
-              <a href="indexLogged.html" type="button" class="button-login" name>Log In</a>
-            <div class="AlreadySigned">
-            <h6 class="card-text1 SignUp"</st>Already Have an Account?</h6>
-            <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" data-bs-dismiss="modal" class="button-signin">Sign In</a>
-          </div>
-          <p class="card-text2 SignUp">Click “Sign Up” to agree to iDreamers’    <u href="#" type="button"> Terms of Service </u>and acknowledge that iDreamers’ <u href="#" type="button" >Privacy Policy</u> applies to you.</p>
-          </div>
-     </div>
-    </div>
-  </div>
-</div>
-<!-- Login -->
-<!-- Sign In -->
-<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="SignUpBorder">
-          <div class="card-body SignIn">
-               <a data-bs-dismiss="modal" type="button" class="button-close" style="float: right;">x</a>
-               <h5 class="card-title1 SignUp">Welcome to iDreamers</h5>
-                <div class="SignUpSocials">
-                   <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
-                   <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
-                   <a href="#" class="btn btn-info"><i class="fa fa-twitter"></i> Twitter</a>
-                   <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" class="btn btn-info" data-bs-dismiss="modal">Sign in with Username</a>
-              </div>
-              <div class="AlreadySigned">
-              <h6 class="card-text1 SignUp"</st>No Account?</h6>
-              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-dismiss="modal" type="button" class="button-signin">Join</a>
-            </div>
-            <p class="card-text2 SignUp">Click “ Join  ” to agree to iDreamers’ <u href="#" type="button">Terms of Service</u> and acknowledge that iDreamers’ <u href="#" type="button">Privacy Policy</u> applies to you.</p>
-            </div>
-       </div>
-  </div>
-</div>
-</div>
-<!-- Sign In -->
-    <!-- header -->
+  <!-- header -->
     <header id="header">
         <div class="container">
           <div class="row">
@@ -99,17 +20,24 @@
               </div>
             </div>
             <div class="col-6">
-              <ul>
-              <li class="signin">
-                <a href="#" class="Button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Sign in</a>
-              </li>
-              <li class="join">
-                <a class="Button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Join</a>
-              </li>
-              </ul>
+              <div class="profile-menu">
+
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" class="profile-head" img src="css/img/Mask Group 104.png" alt="">
+                  Brian Thornton
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
               </div>
           </div>
-        </div>
+
 
 
 <!-- Navigation -->
@@ -352,7 +280,212 @@
     </div>
     </div>
     <hr class="hr2">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card-body1">
+          <img src="css\img\various-colours-sizes-paint.png" alt="">
+            <div class="card-content3">
+              <h5 class="card-title"</st>Soulful Dreams</h5>
+              <p class="card-text crop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <button type="button" class="btn-more">MORE</button>
+            </div>
+          </div>
+        </div>
 
+      <div class="col">
+        <div class="card-body3">
+          <img src="css\img\female-instructor-with-yoga-class-in-the-gym.png" class="card-img-top" alt="">
+          <div class="card-content4">
+          <h6 class="card-title"</st>Yoga Classes</h6>
+          <p class="card-text">Here goes the headline of the article on subject with two lines of aligned text. </p>
+          <button type="button" class="btn-more">MORE</button>
+        </div>
+      </div>
+      <div class="card-body4 scroll">
+        <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+    </div>
+    </div>
+
+      <div class="col">
+        <div class="card-body3">
+          <img src="css\img\high-angle-artist-painting.png" class="card-img-top" alt="">
+          <div class="card-content4">
+          <h6 class="card-title"</st>Painting Lessons</h6>
+          <p class="card-text">Here goes the headline of the article on subject with two lines of aligned text. </p>
+          <button type="button" class="btn-more">MORE</button>
+        </div>
+      </div>
+      <div class="card-body4 scroll">
+        <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      <div class="card-content5">
+        <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+        <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+        <button type="button" class="btn-rate">Rate A Dream</button>
+      </div>
+      </div>
+    </div>
+
+  </div>
+  <hr class="hr2">
+  <div class="row">
+    <div class="col">
+      <div class="card-body3">
+        <img src="css\img\female-instructor-with-yoga-class-in-the-gym.png" class="card-img-top" alt="">
+        <div class="card-content4">
+        <h6 class="card-title"</st>Yoga Classes</h6>
+        <p class="card-text">Here goes the headline of the article on subject with two lines of aligned text. </p>
+        <button type="button" class="btn-more">MORE</button>
+      </div>
+    </div>
+    <div class="card-body4 scroll">
+      <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+  </div>
+  </div>
+
+    <div class="col">
+      <div class="card-body3">
+        <img src="css\img\female-instructor-with-yoga-class-in-the-gym.png" class="card-img-top" alt="">
+        <div class="card-content4">
+        <h6 class="card-title"</st>Yoga Classes</h6>
+        <p class="card-text">Here goes the headline of the article on subject with two lines of aligned text. </p>
+        <button type="button" class="btn-more">MORE</button>
+      </div>
+    </div>
+    <div class="card-body4 scroll">
+      <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+  </div>
+  </div>
+
+    <div class="col">
+      <div class="card-body3">
+        <img src="css\img\high-angle-artist-painting.png" class="card-img-top" alt="">
+        <div class="card-content4">
+        <h6 class="card-title"</st>Painting Lessons</h6>
+        <p class="card-text">Here goes the headline of the article on subject with two lines of aligned text. </p>
+        <button type="button" class="btn-more">MORE</button>
+      </div>
+    </div>
+    <div class="card-body4 scroll">
+      <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    <div class="card-content5">
+      <img src="css\img\Group 6545.png" style="width:100px; height:60px;"  alt="">
+      <h6 class="card-title"</st>Dream Unit Title<p class="card-text">City, Country </p></h6>
+      <button type="button" class="btn-rate">Rate A Dream</button>
+    </div>
+    </div>
+  </div>
+
+</div>
 </div>
 </div>
 <!-- footer -->
@@ -383,9 +516,24 @@
 </div>
     </footer>
 
+  <!-- <script> -->
+    document.querySelector(".profile-head ul li").addEventListener("click", function(){
+      this.classList.toggle("activate");
+    });
+  <!-- </script> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script type="js/scripts.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script>
+    const button = document.querySelector('#button');
+    const tooltip = document.querySelector('#tooltip');
 
+    // Pass the button, the tooltip, and some options, and Popper will do the
+    // magic positioning for you:
+    Popper.createPopper(button, tooltip, {
+      placement: 'right',
+    });
+  </script>
 </body>
 </html>
