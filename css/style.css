@@ -568,6 +568,12 @@ font-size: 20px;
 .location {
 width: 170px;
 }
+.num {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+}
 .info{
   display: flex;
   justify-content: center;
@@ -637,13 +643,21 @@ margin-left: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 210px;
-
 }
 .dropdown ul{
   display: none;
     position: absolute;
-
     top: 50px;
+}
+
+header .dropdown-menu{
+ margin: 18px !important;
+
+}
+.dropdownheader{
+ margin: 10px;
+color:#00a870;
+
 }
 .dropdown ul::after{
   position: absolute;
@@ -656,6 +670,41 @@ margin-left: 4px;
      border-right: 20px solid transparent;
      border-bottom: 20px solid white;
 
+
+}
+.dropdown1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 213px;
+
+}
+.dropdown1 ul{
+  display: none;
+    position: absolute;
+    top: 50px;
+}
+.hr4{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 2px solid black;
+  opacity: 0.5;
+}
+.atprofile{
+font-size: 13px;
+margin-left: 25px;
+color: black;
+}
+
+.dropdown1 ul::after{
+  position: absolute;
+     left: 50%;
+     top: -10px;
+     width: 0;
+     height: 0;
+     content: '';
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+     border-bottom: 20px solid white;
 
 }
 .Notif{
